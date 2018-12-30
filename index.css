@@ -1,7 +1,6 @@
 
 body {
     background: rgb(28, 153, 141);
-    /* background: white; */
     text-align: center;
     font-family: 'Raleway', Helvetica, sans-serif;
 }
@@ -22,14 +21,43 @@ body {
     margin: 1vw 0 1vw 0;
 }
 #box1 #box2{
-    text-align: center;
-    width: 25%;
+    /* text-align: center;
+    width: 25%; */
 }
 
 
 .labels {
-        display: inline-block;
-        text-align: center;
-        width: 10%;     
-        vertical-align: top;     
+    display: inline-block;
+    text-align: right;
+    width: 15%;     
+    vertical-align: top; 
+    padding: 0.12vw;
+    margin: 0.25vw;  
     }
+.inputs{
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+    vertical-align: middle;
+}
+.input-field {
+    height: 1.5vw;
+    width: 15vw;
+    padding: 0.12vw;
+    margin: 0.25vw;
+    border: 0.08vw solid #c0c0c0;
+    border-radius: 0.2vw;
+}
+.radio {
+    position: relative;
+    left: -4vw;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 0.5vw;
+}
+#role{
+    margin-top: 2.5vw;
+}
+.userRatings{
+    float: left;
+}
