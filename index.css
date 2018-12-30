@@ -1,0 +1,35 @@
+
+body {
+    background: rgb(28, 153, 141);
+    /* background: white; */
+    text-align: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+#box-container-1 {
+    background: rgba(245,245,245,1);
+    margin: 10vw;
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#box-row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 1vw 0 1vw 0;
+}
+#box1 #box2{
+    text-align: center;
+    width: 25%;
+}
+
+
+.labels {
+        display: inline-block;
+        text-align: center;
+        width: 10%;     
+        vertical-align: top;     
+    }
