@@ -14,83 +14,120 @@
         </article>
     </div>
     <form id="survey-form">
-    <div id="box-container-1">
-        <div id="box1">
-            <p id="description">Let us know how we can improve Education</p>
+        <div id="box-container-1">
+            <div id="box1">
+                <p id="description">Let us know how we can improve Education</p>
+            </div>
+            <div id="box2">
+                <div id="box-row">
+                    <div class="labels">
+                        <label id="name-label" for="name">Name</label>
+                    </div>
+                    <div class="inputs">
+                        <input class="input-field" type="text" name="name" id="name" placeholder="i.e Nick" required>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label id="email-label" for="email">Email</label>
+                    </div>
+                    <div class="inputs">
+                        <input class="input-field" type="email" name="email" id="email" placeholder="i.e ...@gmail.com" required>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label id="number-label" for="age">Age</label>
+                    </div>
+                    <div class="inputs">
+                        <input class="input-field" type="number" min="1" max="120" name="age" id="number" placeholder="i.e 27" required>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label for="role">Which option best describes your current role ?
+                        </label>
+                    </div>
+                    <div class="inputs">
+                        <select class="input-field" name="role" id="dropdown">
+                            <option value="student">Student</option>
+                            <option value="fullTimeJob">Full-Time Job</option>
+                            <option value="partTimeJob">Part-Time Job</option>
+                            <option value="notSay">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label for="school">Did you had a good Experience overall from High-School?</label>
+                    </div>
+                    <div class="inputs">
+                        <ul style="list-style: none;">
+                            <li class="radio">
+                                <label for="">
+                                    Definitely <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label for="">
+                                    Maybe <input name="radio-buttons" value="2" type="radio" class="userRatings">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label for="">
+                                    Not Sure <input name="radio-buttons" value="3" type="radio" class="userRatings">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label for="">
+                                    Not at all <input name="radio-buttons" value="4" type="radio" class="userRatings">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label for="">Things that should be improved in the future
+                            (Check all that apply):</label>
+                    </div>
+                    <div class="inputs">
+                        <ul id="preferences" style="list-style: none;">
+                            <li class="checkbox">
+                                <label for="music">Music</label>
+                                <input type="checkbox" name="music" id="music" value="1">
+                            </li>
+                            <li class="checkbox">
+                                <label for="theatre">Theatre</label>
+                                <input type="checkbox" name="theatre" id="theatre" value="2">
+                            </li>
+                            <li class="checkbox">
+                                <label for="athletics">Athletics</label>
+                                <input type="checkbox" name="athletics" id="athletics" value="3">
+                            </li>
+                            <li class="checkbox">
+                                <label for="lab">lab exercices</label>
+                                <input type="checkbox" name="lab" id="lab" value="4">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <div class="labels">
+                        <label for="comments">Any Comments or Suggestions?</label>
+                    </div>
+                    <div class="inputs">
+                        <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter your Comments here...">
+                        </textarea>
+                    </div>
+                </div>
+                <div id="box-row">
+                    <input type="submit" id="submit" value="submit">
+                </div>
+            </div>
         </div>
-        <div id="box2">
-            <div id="box-row">
-                <div class="labels">
-                    <label for="name">Name</label>
-                </div>
-                <div class="inputs">
-                    <input class="input-field" type="text" name="name" id="name">
-                </div>
-            </div>
-            <div id="box-row">
-                <div class="labels">
-                    <label for="email">Email</label>
-                </div>
-                <div class="inputs">
-                    <input  class="input-field" type="text" name="email" id="email">
-                </div>
-            </div>
-            <div id="box-row">
-                <div class="labels">
-                    <label for="age">Age</label>
-                </div>
-                <div class="inputs">
-                    <input  class="input-field" type="number" name="age" id="age">
-                </div>
-            </div>
-            <div id="box-row">
-                <div class="labels">
-                    <label for="role">Which option best describes your current role ?
-                    </label>
-                </div>
-                <div class="inputs">
-                    <select class="input-field" name="role" id="role">
-                        <option value="student">Student</option>
-                        <option value="fullTimeJob">Full-Time Job</option>
-                        <option value="partTimeJob">Part-Time Job</option>
-                        <option value="notSay">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-            <div id="box-row">
-                <div class="labels">
-                    <label for="school">Did you had a good Experience overall from High-School?</label>
-                </div>
-                <div class="inputs">
-                    <ul style="list-style: none;">
-                        <li class="radio">
-                            <label for="">
-                                Definitely <input name="radio-buttons" value="1" type="radio" class="userRatings">
-                            </label>
-                        </li>
-                        <li class="radio">
-                            <label for="">
-                                Maybe <input name="radio-buttons" value="2" type="radio" class="userRatings">
-                            </label>
-                        </li>
-                        <li class="radio">
-                            <label for="">
-                                Not Sure <input name="radio-buttons" value="3" type="radio" class="userRatings">
-                            </label>
-                        </li>
-                        <li class="radio">
-                            <label for="">
-                                Not at all <input name="radio-buttons" value="4" type="radio" class="userRatings">
-                            </label>
-                        </li>                                                                    
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</form>
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 

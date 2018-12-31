@@ -4,13 +4,17 @@ body {
     text-align: center;
     font-family: 'Raleway', Helvetica, sans-serif;
 }
+#title{
+    margin: 1vw;
+}
 #box-container-1 {
     background: rgba(245,245,245,1);
-    margin: 10vw;
+    margin: 5vw;
     padding: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 1vw;
 }
 
 #box-row{
@@ -19,10 +23,6 @@ body {
     text-align: center;
     justify-content: center;
     margin: 1vw 0 1vw 0;
-}
-#box1 #box2{
-    /* text-align: center;
-    width: 25%; */
 }
 
 
@@ -33,6 +33,7 @@ body {
     vertical-align: top; 
     padding: 0.12vw;
     margin: 0.25vw;  
+    font-size: 1.5vw;
     }
 .inputs{
     display: inline-block;
@@ -41,7 +42,7 @@ body {
     vertical-align: middle;
 }
 .input-field {
-    height: 1.5vw;
+    height: 2.5vw;
     width: 15vw;
     padding: 0.12vw;
     margin: 0.25vw;
@@ -49,15 +50,37 @@ body {
     border-radius: 0.2vw;
 }
 .radio {
-    position: relative;
-    left: -4vw;
-    margin-left: 10px;
     display: block;
-    padding-bottom: 0.5vw;
+    position: relative;
+    left: -2vw;
+    padding: 0.5vw;
 }
-#role{
+#dropdown{
     margin-top: 2.5vw;
 }
-.userRatings{
+
+.userRatings, input[type="checkbox"] {
     float: left;
+}
+.checkbox {
+    display: block;
+    position: relative;
+    left: -2vw;
+    padding: 0.5vw;   
+}
+textarea {
+    margin: 0vw;
+    height: 10vw;
+    width: 21vw;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
 }
